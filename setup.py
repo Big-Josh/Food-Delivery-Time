@@ -12,9 +12,10 @@ def get_requirements(file_path:str)->List[str]:
         [req.replace("\n","") for req in requirements]
         
 
-        #del requirements[-1]
+        del requirements[-1]
 
     return requirements
+
 
 setup(
     name = 'DoorDashProject',
